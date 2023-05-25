@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* What I have done most of the time is: Creating a div container every time and use the flex module to align items inside the container */
+
+.bgimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 430px;
+    width: 100%;
+    background-image: url(bgimage.svg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#page1{
+    font-family: 'Red Hat Display';
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.box{
+    z-index: 1; /*To position the box container infront so the bgimg cannot overlap*/
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.graphic img{
+    width: 300px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+main h1, p{
+    text-align: center;
+    margin: 10px;
+}
+
+main h1{
+  margin: 25px 0px 15px 0px;
+}
+
+main p {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+  }
+.border{        /*I have created this selector just because I wanted the payplan div to align at the center*/
+    height: 80px;            
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.payplan{
+    margin-top: 10px;
+    background-color:hsl(225, 100%, 98%) ;
+    display: flex;
+    height: 80px;
+    width: 260px;
+    border-radius: 10px;
+    white-space: nowrap; /*"Annual Plan" was not aligning in the same line i.e "Plan" was positioning right below "Annual" so this property will alow the full word stay in the same line*/
+}
+
+.musicpic{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin: 15px 15px 15px 15px;
+    
+   
+}
+
+.updown{
+    margin: 18px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.updown b{
+    font-size: 15px;
+    margin-bottom: -5px;
+}
+.updown p{
+    font-size: 14px;
+    margin-left: -1px;
+    color: hsl(224, 23%, 55%);
+    
+}
+
+.payplan .change{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-left: 17px;
+}
+
+.change a {
+    color: hsl(275.45deg 100% 34.51%);
+    font-weight: 700;
+    font-size: small;
+}
+
+.btns{
+    height: 120px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns button {
+    height: 39px;
+    width: 250px;
+    color: white;
+    background-color: #382ae1;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 15px;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    margin: 15px 0px 10px 0px;
+    box-shadow: 1px 17px 10px 0 rgba(0, 0, 0, 0.1)
+  }
+
+  .btns a {
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+  }
+
+  .attribution{
+    margin-top: 15px;
+  }
